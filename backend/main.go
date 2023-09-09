@@ -113,7 +113,7 @@ func main() {
 	http.HandleFunc("/broken", votesHandler)
 
 	server := &http.Server{
-		Addr:         "127.0.0.1:8985",
+		Addr:         "0.0.0.0:8985",
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
